@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <title>Wine Quiz</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="block hidden"></div>
+    <div class="result wrapper hidden">
+        <div class="result__bg">
+            <div class="result__about"></div>
+            <div class="result__button button" onClick="window.location.reload()">НА ГЛАВНУЮ</div>
+        </div>
+    </div>
+    <div id="world" class="main hidden"></div>
+    <div id="vines" class="main hidden"></div>
+    <div id="history" class="main hidden"></div>
+    <div id="testing" class="main hidden"></div>
+    <div id="arts" class="main hidden"></div>
+    <div id="top" class="main hidden"></div>
+    <div class="head">
+        <div class="menu__front wrapper">
+            <div class="menu__bg">
+                <div class="menu__about">
+                    <span>Добро пожаловать на винный квиз!</span>
+                    <br>
+                    <span>Проверить полученные знания, узнать нечто новое, получить удовольствие от обучения ещё никогда не было настолько интересным. Мы собрали для вас вопросы и разбили их на 6 категорий. Выбирайте наиболее привлекательную и отправляйтесь в удивительное винное путешествие!</span>
+                </div>
+                <div class="menu__button button" onclick="go_list()">МЕНЮ</div>
+            </div>
+        </div>
+        <div class="menu__back wrapper">
+            <div class="menu__topic" onclick="choose_theme('world')">
+                <div class="topic__icon" style="background-image: url('img/around_world.png')"></div>
+                <div class="topic__title">Вокруг света &ndash;<br>вино и виноградники</div>
+            </div>
+            <div class="menu__topic" onclick="choose_theme('vines')">
+                <div class="topic__icon" style="background-image: url('img/vines.png')"></div>
+                <div class="topic__title">Лозы и винификация</div>
+            </div>
+            <div class="menu__topic" onclick="choose_theme('history')">
+                <div class="topic__icon" style="background-image: url('img/history.png')"></div>
+                <div class="topic__title">История вина</div>
+            </div>
+            <div class="menu__topic" onclick="choose_theme('testing')">
+                <div class="topic__icon" style="background-image: url('img/wine_tasting.png')"></div>
+                <div class="topic__title">Мастерство дегустации</div>
+            </div>
+            <div class="menu__topic" onclick="choose_theme('arts')">
+                <div class="topic__icon" style="background-image: url('img/wine_arts.png')"></div>
+                <div class="topic__title">Вино и искусство</div>
+            </div>
+            <div class="menu__topic" onclick="choose_theme('top')">
+                <div class="topic__icon" style="background-image: url('img/top_wine.png')"></div>
+                <div class="topic__title">Легендарные вина</div>
+            </div>
+        </div>
+    </div>
+    <div class="background"></div>
+    <script src="script.js"></script>
+</body>
+</html>
