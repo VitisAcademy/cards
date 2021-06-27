@@ -1974,10 +1974,10 @@ function generator(Q, IN, id){
 // ========================== ACTION ========================== \\
 
 generator(Q1, IN1, 'world');
-generator(Q2, IN1, 'vines');
-generator(Q3, IN1, 'history');
-generator(Q4, IN1, 'testing');
-generator(Q5, IN1, 'arts');
-generator(Q6, IN1, 'top');
+generator(Q2, IN2, 'vines');
+generator(Q3, IN3, 'history');
+generator(Q4, IN4, 'testing');
+generator(Q5, IN5, 'arts');
+generator(Q6, IN6, 'top');
 
 // ========================== END ========================== \\
